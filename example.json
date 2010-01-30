@@ -1,0 +1,30 @@
+{
+  "_comment": { "Please not that PHP's json_decode function is very strict! Many browsers JSON parsers are slack, so when Validanguage (JS) accepts the JSON file ValidanguagePHP may not due to json_decode()": "" },
+
+  "surname": {
+    "required": true,
+
+    "onserver": false,
+    "_comment": "onserver is validanguagePHP only, it's default value is true",
+
+    "onblur": false,
+    "onsubmit": false,
+
+    "errorMsg": "Please enter a surname containing only letters.",
+
+    "characters": {
+      "mode": "allow",
+      "expression": "alpha",
+      "suppress": false
+    }
+  },
+  "forename": {
+    "errorMsg": "Please enter a forename containing only letters.",
+    "required": true,
+    "characters": {
+      "mode": "allow",
+      "expression": "alpha",
+      "suppress": false
+    }
+  }
+}
